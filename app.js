@@ -1,27 +1,28 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const heading2 = React.createElement(
-  "h1",
-  { id: "heading2" },
-  "Second Title From React!"
+const title = (
+  <h1 className="head" tabIndex="5">
+    {2 + 2 + 6}
+    <br></br>
+    Hello guys k cha hallichalli
+  </h1>
+);
+
+const number = 500;
+const HeadingComponent = () => (
+  <div id="container">
+    {console.log("oi mula")}
+    <br></br>
+    {2 + 2}
+    {title}
+    {number}
+    <h1 className="heading">
+      <br></br>
+      {2 + 2 + 3} <br></br> Hello guys
+    </h1>
+  </div>
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(heading2);
-
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "This is Namaste React! ✨"),
-    React.createElement("h1", {}, "Second Title From React! 1"),
-  ]),
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "First Title From React! 2"),
-    React.createElement("h1", {}, "Second Title From React! 2"),
-  ]),
-]);
-
-console.log(parent); // Object
-
-root.render(parent);
+root.render(<HeadingComponent />);

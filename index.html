@@ -4,37 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./index.css">
     <title>Namaste React</title>
 </head>
 
 <body>
 
-    <div id="root">
-
+    <div id="root" class="root">
+        <h1>Not Rendered</h1>
     </div>
-
-
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
-    <!-- <script>
-
-        const heading2 = React.createElement("h1", {}, "Second Title From React!");
-
-        const root = ReactDOM.createRoot(document.getElementById("root"));
-
-        root.render(heading2);
-
-        const heading3 = React.createElement("h2", {}, "This is now making sense!");
-        
-        root.render(heading3);
-
-    </script> -->
-
-    <script src="app.js"></script>
-
-
+    <script type="module" src="./app.js"></script>
 </body>
 
 </html>
