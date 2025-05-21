@@ -39,7 +39,6 @@
   width: 100%;
 } */
 
-
 /* Updated CSS */
 .header {
   display: flex;
@@ -177,4 +176,10 @@
   color: #888;
   font-size: 13px;
   padding-bottom: 15px;
+}
+
+.filter-btn {
+  margin: 20px;
+  padding: 10px;
+  cursor: pointer;
 }
